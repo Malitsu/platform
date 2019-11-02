@@ -80,7 +80,7 @@ public class MainGame extends ApplicationAdapter implements GestureDetector.Gest
         createEnemies();
         crystalSound = Gdx.audio.newSound(Gdx.files.internal("Twinkle-sound-effect.mp3"));;
         jumpSound = Gdx.audio.newSound(Gdx.files.internal("jump.mp3"));;
-        gameover = Gdx.audio.newSound(Gdx.files.internal("gameover.mp3"));;
+        gameover = Gdx.audio.newSound(Gdx.files.internal("gameover.wav"));;
 
         tiledMap = new TmxMapLoader().load("map.tmx");
         tiledMapRenderer = new OrthogonalTiledMapRenderer(tiledMap, 1/100f);
